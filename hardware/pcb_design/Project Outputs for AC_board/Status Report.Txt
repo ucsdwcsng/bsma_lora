@@ -1,0 +1,24 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [AC_board.PcbDoc]
+   Generated File[AC_board.GTO]
+   Generated File[AC_board.GTS]
+   Generated File[AC_board.GTL]
+   Generated File[AC_board.G1]
+   Generated File[AC_board.G2]
+   Generated File[AC_board.GBL]
+   Generated File[AC_board.GBS]
+   Generated File[AC_board.GBO]
+   Generated File[AC_board.GM1]
+   Generated File[AC_board.GKO]
+   Generated File[AC_board.GPT]
+   Generated File[AC_board.GPB]
+   Generated File[AC_board.RUL]
+   Generated File[AC_board.EXTREP]
+   Generated File[AC_board.REP]
+
+
+Files Generated   : 15
+Documents Printed : 0
+
+Finished Output Generation At ¤W¤È 10:37:18 On 2021/1/4

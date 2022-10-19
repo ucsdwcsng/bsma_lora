@@ -1,0 +1,151 @@
+Protel Design System Design Rule Check
+PCB File : D:\Lab\ac_board_v3\AC_board v3\AC_board.PcbDoc
+Date     : 2021/1/3
+Time     : ¤U¤È 05:18:13
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNetClass('RF Nets')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=5mil) (InNetClass('HMC RF IN')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=4.069mil) (InNetClass('HMC RF IN')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=20mil) (InNetClass('RF Nets')),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=Yes) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net AGND Between Pad U1-3(730.024mil,963.016mil) on Top Layer And Pad U1-5(769mil,989mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net AGND Between Via (981.208mil,1084.05mil) from Top Layer to Bottom Layer And Pad U2-5(989.779mil,1019mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net AGND Between Pad U3-5(5104.512mil,3188mil) on Top Layer And Pad U3-3(5143.488mil,3213.984mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VCC-IN1_U_VectorModulator1 Between Pad U4_U_VectorModulator1-7(4066.389mil,2696.394mil) on Top Layer And Pad U4_U_VectorModulator1-8(4086.074mil,2696.394mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VCC-IN1_U_VectorModulator2 Between Pad U4_U_VectorModulator2-7(4064.055mil,3293.63mil) on Top Layer And Pad U4_U_VectorModulator2-8(4083.74mil,3293.63mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net AGND Between Pad U5-5(5328.512mil,3212mil) on Top Layer And Via (5329.29mil,3277.33mil) from Top Layer to Bottom Layer 
+Rule Violations :6
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=13.305mil) (Max=13.305mil) (Preferred=13.305mil) (InNetClass('RF Nets'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=13.305mil) (Max=13.305mil) (Preferred=13.305mil) (InNetClass('RF Nets'))
+   Violation between Width Constraint: Track (2959mil,3022mil)(2959.334mil,3022.334mil) on Top Layer Actual Width = 0mil, Target Width = 13.305mil
+   Violation between Width Constraint: Track (3548.491mil,2731.176mil)(3552.315mil,2735mil) on Top Layer Actual Width = 0mil, Target Width = 13.305mil
+   Violation between Width Constraint: Track (3549.182mil,2739.133mil)(3552.504mil,2735.811mil) on Top Layer Actual Width = 0mil, Target Width = 13.305mil
+   Violation between Width Constraint: Track (3552.504mil,2735.811mil)(3553mil,2735.315mil) on Top Layer Actual Width = 0mil, Target Width = 13.305mil
+   Violation between Width Constraint: Track (4212.855mil,3320.812mil)(4213.599mil,3321.556mil) on Top Layer Actual Width = 0mil, Target Width = 13.305mil
+   Violation between Width Constraint: Track (4212.855mil,3320.812mil)(4214.824mil,3320.812mil) on Top Layer Actual Width = 0mil, Target Width = 13.305mil
+   Violation between Width Constraint: Track (4520.167mil,3265.125mil)(4523.028mil,3267.985mil) on Top Layer Actual Width = 0mil, Target Width = 13.305mil
+Rule Violations :7
+
+Processing Rule : Width Constraint (Min=10mil) (Max=10mil) (Preferred=10mil) (All)
+   Violation between Width Constraint: Track (5437mil,2688mil)(5437mil,2788mil) on Bottom Layer Actual Width = 20mil, Target Width = 10mil
+   Violation between Width Constraint: Track (5437mil,2788mil)(5517mil,2868mil) on Bottom Layer Actual Width = 20mil, Target Width = 10mil
+   Violation between Width Constraint: Track (5517mil,2868mil)(5785mil,2868mil) on Bottom Layer Actual Width = 20mil, Target Width = 10mil
+   Violation between Width Constraint: Track (5661mil,2639mil)(5661mil,2792mil) on Bottom Layer Actual Width = 20mil, Target Width = 10mil
+   Violation between Width Constraint: Track (5785mil,2868mil)(5851mil,2802mil) on Bottom Layer Actual Width = 20mil, Target Width = 10mil
+Rule Violations :5
+
+Processing Rule : Width Constraint (Min=10mil) (Max=10mil) (Preferred=10mil) (InNetClass('HMC RF IN'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=10mil) (Preferred=10mil) (InNetClass('HMC RF IN'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=5mil) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (3.937mil < 5mil) Between Pad R1-1(852.512mil,960.472mil) on Top Layer And Track (838.732mil,982.126mil)(838.732mil,997.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.937mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.937mil < 5mil) Between Pad R1-1(852.512mil,960.472mil) on Top Layer And Track (866.291mil,982.126mil)(866.291mil,997.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.937mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.937mil < 5mil) Between Pad R1-2(852.512mil,1019.528mil) on Top Layer And Track (838.732mil,982.126mil)(838.732mil,997.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.937mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (4.866mil < 5mil) Between Pad R1-2(852.512mil,1019.528mil) on Top Layer And Track (866.291mil,982.126mil)(866.291mil,997.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.866mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.937mil < 5mil) Between Pad R2-1(1082mil,1046.527mil) on Top Layer And Track (1068.22mil,1009.126mil)(1068.22mil,1024.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.937mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (4.866mil < 5mil) Between Pad R2-1(1082mil,1046.527mil) on Top Layer And Track (1095.78mil,1009.126mil)(1095.78mil,1024.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.866mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.937mil < 5mil) Between Pad R2-2(1082mil,987.472mil) on Top Layer And Track (1068.22mil,1009.126mil)(1068.22mil,1024.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.937mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.937mil < 5mil) Between Pad R2-2(1082mil,987.472mil) on Top Layer And Track (1095.78mil,1009.126mil)(1095.78mil,1024.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.937mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.937mil < 5mil) Between Pad R3-1(5033mil,3215.528mil) on Top Layer And Track (5019.22mil,3178.126mil)(5019.22mil,3193.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.937mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (4.866mil < 5mil) Between Pad R3-1(5033mil,3215.528mil) on Top Layer And Track (5046.779mil,3178.126mil)(5046.779mil,3193.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.866mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.937mil < 5mil) Between Pad R3-2(5033mil,3156.472mil) on Top Layer And Track (5019.22mil,3178.126mil)(5019.22mil,3193.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.937mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.937mil < 5mil) Between Pad R3-2(5033mil,3156.472mil) on Top Layer And Track (5046.779mil,3178.126mil)(5046.779mil,3193.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.937mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.937mil < 5mil) Between Pad R4-1(5261.22mil,3242.528mil) on Top Layer And Track (5247.441mil,3205.126mil)(5247.441mil,3220.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.937mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (4.866mil < 5mil) Between Pad R4-1(5261.22mil,3242.528mil) on Top Layer And Track (5275mil,3205.126mil)(5275mil,3220.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.866mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.937mil < 5mil) Between Pad R4-2(5261.22mil,3183.472mil) on Top Layer And Track (5247.441mil,3205.126mil)(5247.441mil,3220.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.937mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.937mil < 5mil) Between Pad R4-2(5261.22mil,3183.472mil) on Top Layer And Track (5275mil,3205.126mil)(5275mil,3220.874mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.937mil]
+Rule Violations :16
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+   Violation between Silk To Silk Clearance Constraint: (1.813mil < 10mil) Between Arc (3555mil,3219.165mil) on Top Overlay And Text "J8" (3508.016mil,3216.01mil) on Top Overlay Silk Text to Silk Clearance [1.813mil]
+   Violation between Silk To Silk Clearance Constraint: (5.402mil < 10mil) Between Text "1" (5941mil,2659mil) on Top Overlay And Track (5911mil,2489mil)(5911mil,2689mil) on Top Overlay Silk Text to Silk Clearance [5.402mil]
+   Violation between Silk To Silk Clearance Constraint: (8.74mil < 10mil) Between Text "2" (5961mil,2559mil) on Top Overlay And Track (5911mil,2489mil)(5911mil,2689mil) on Top Overlay Silk Text to Silk Clearance [8.74mil]
+   Violation between Silk To Silk Clearance Constraint: (2.063mil < 10mil) Between Text "5" (5601mil,2659mil) on Top Overlay And Track (5611mil,2489mil)(5611mil,2689mil) on Top Overlay Silk Text to Silk Clearance [2.063mil]
+   Violation between Silk To Silk Clearance Constraint: (2.063mil < 10mil) Between Text "6" (5601mil,2559mil) on Top Overlay And Track (5611mil,2489mil)(5611mil,2689mil) on Top Overlay Silk Text to Silk Clearance [2.063mil]
+Rule Violations :5
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+   Violation between Net Antennae: Track (4212.855mil,3320.812mil)(4214.824mil,3320.812mil) on Top Layer 
+   Violation between Net Antennae: Track (4212.855mil,3320.812mil)(4214.824mil,3320.812mil) on Top Layer 
+Rule Violations :2
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J2-GND(106mil,1165mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J2-GND(106mil,1165mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J2-GND(106mil,817mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J2-GND(106mil,817mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J2-SIG(43.5mil,991mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J3-GND(6193.213mil,3038mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J3-GND(6193.213mil,3038mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J3-GND(6193.213mil,3386mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J3-GND(6193.213mil,3386mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J3-SIG(6255.713mil,3212mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6.001mil < 10mil) Between Board Edge And Pad J5-GND(106mil,3692.992mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6.001mil < 10mil) Between Board Edge And Pad J5-GND(106mil,3692.992mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6.001mil < 10mil) Between Board Edge And Pad J5-GND(106mil,4040.992mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6.001mil < 10mil) Between Board Edge And Pad J5-GND(106mil,4040.992mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6.001mil < 10mil) Between Board Edge And Pad J5-SIG(43.5mil,3866.992mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J6-GND(6193.213mil,3692.992mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J6-GND(6193.213mil,3692.992mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J6-GND(6193.213mil,4040.992mil) on Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J6-GND(6193.213mil,4040.992mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6mil < 10mil) Between Board Edge And Pad J6-SIG(6255.713mil,3866.992mil) on Top Layer 
+Rule Violations :20
+
+Processing Rule : Length Constraint (Min=24911.289mil) (Max=24911.289mil) (InNet('No Net') And OnLayer('Top Layer'))
+Rule Violations :0
+
+Processing Rule : Length Constraint (Min=38652.77mil) (Max=38652.77mil) (InNet('No Net') And OnLayer('Top Layer'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=0mil) (InNetClass('Taps'))
+Rule Violations :0
+
+Processing Rule : Room U_VectorModulator1 (Bounding Region = (4688.263mil, 3460.834mil, 5153.649mil, 3906.834mil) (InComponentClass('U_VectorModulator1'))
+Rule Violations :0
+
+Processing Rule : Room U_VectorModulator2 (Bounding Region = (4714.055mil, 4077.197mil, 5144.055mil, 4502.197mil) (InComponentClass('U_VectorModulator2'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 61
+Waived Violations : 0
+Time Elapsed        : 00:00:05

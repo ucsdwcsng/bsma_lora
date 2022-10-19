@@ -1,0 +1,13 @@
+DRC Rules Export File for PCB: D:\fdr_lpwan\pcb_design\AC_board_v3\AC_board.PcbDoc
+RuleKind=Width|RuleName=Schematic Width Constraint_1|Scope=Board|Minimum=13.31
+RuleKind=Clearance|RuleName=Schematic Clearance Constraint|Scope=Board|Minimum=20.00
+RuleKind=Width|RuleName=Schematic Width Constraint|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Schematic Clearance Constraint_1|Scope=Board|Minimum=5.00
+RuleKind=Width|RuleName=HMC RF IN Width|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=HMC RF IN Clearance|Scope=Board|Minimum=4.07
+RuleKind=Width|RuleName=RF Width|Scope=Board|Minimum=13.31
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=RF Clearance|Scope=Board|Minimum=10.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=1
