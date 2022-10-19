@@ -1,0 +1,3 @@
+[submodule "testbed/arduino-lmic"]
+	path = testbed/arduino-lmic
+	url = https://github.com/ucsdwcsng/arduino-lmic.git
