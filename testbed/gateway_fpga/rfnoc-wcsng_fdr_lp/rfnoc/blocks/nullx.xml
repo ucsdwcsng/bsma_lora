@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--Default XML file-->
+<nocblock>
+  <name>nullx</name>
+  <blockname>nullx</blockname>
+  <ids>
+    <id revision="0">EAAA06A27C6D25BE</id>
+  </ids>
+  <!-- Registers -->
+  <registers>
+   <setreg>
+     <name>NULLXCONF</name>
+     <address>128</address>
+   </setreg>
+  </registers>
+  <!-- Args -->
+  <args>
+   <arg>
+     <name>nullxconf</name>
+     <type>double</type>
+     <value>107374.0</value>
+     <check>GE($nullxconf, 0.0) AND LE($nullxconf, 1073741824.0)</check>
+     <check_message>Invalid nullxconf.</check_message>
+     <action>
+       SR_WRITE("NULLXCONF", IROUND($nullxconf))
+     </action>
+   </arg>
+  </args>
+  <!--One input, one output. If this is used, better have all the info the C++ file.-->
+  <ports>
+    <sink>
+      <name>in0</name>
+      <type>sc16</type>
+    </sink>
+    <source>
+      <name>out0</name>
+      <type>sc16</type>
+    </source>
+  </ports>
+</nocblock>

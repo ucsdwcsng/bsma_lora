@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<block>
+  <name>RFNoC: lorabusytone</name>
+  <key>wcsng_fdr_lp_lorabusytone</key>
+  <category>wcsng_fdr_lp</category>
+  <import>import wcsng_fdr_lp</import>
+  <make>wcsng_fdr_lp.lorabusytone(
+          self.device3,
+          uhd.stream_args( # TX Stream Args
+                cpu_format="fc32",
+                otw_format="sc16",
+                args="gr_vlen={0},{1}".format(${grvlen}, "" if $grvlen == 1 else "spp={0}".format($grvlen)),
+          ),
+          uhd.stream_args( # RX Stream Args
+                cpu_format="fc32",
+                otw_format="sc16",
+                args="gr_vlen={0},{1}".format(${grvlen}, "" if $grvlen == 1 else "spp={0}".format($grvlen)),
+          ),
+          $block_index,
+          $device_index,
+          $enable_eob_on_stop
+  )
+self.$(id).set_arg("param1", $param1)
+self.$(id).set_arg("param2", $param2)
+self.$(id).set_arg("param3", $param3)
+self.$(id).set_arg("paramx", $paramx)
+  </make>
+  <callback>set_arg("param1", $param1)</callback>
+  <callback>set_arg("param2", $param2)</callback>
+  <callback>set_arg("param3", $param3)</callback>
+  <callback>set_arg("paramx", $paramx)</callback>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+
+  <param>
+    <name>Host Data Type</name>
+    <key>type</key>
+    <type>enum</type>
+    <option>
+      <name>Complex float32</name>
+      <key>fc32</key>
+      <opt>type:complex</opt>
+    </option>
+    <option>
+      <name>Complex int16</name>
+      <key>sc16</key>
+      <opt>type:sc16</opt>
+    </option>
+    <option>
+      <name>Byte</name>
+      <key>u8</key>
+      <opt>type:byte</opt>
+    </option>
+    <option>
+      <name>VITA word32</name>
+      <key>item32</key>
+      <opt>type:s32</opt>
+    </option>
+  </param>
+  <!--RFNoC basic block configuration -->
+  <param>
+    <name>Device Select</name>
+    <key>device_index</key>
+    <value>-1</value>
+    <type>int</type>
+    <hide>#if int($device_index()) &lt; 0 then 'part' else 'none'#</hide>
+    <tab>RFNoC Config</tab>
+  </param>
+
+  <param>
+    <name>lorabusytone Select</name>
+    <key>block_index</key>
+    <value>-1</value>
+    <type>int</type>
+    <hide>#if int($block_index()) &lt; 0 then 'part' else 'none'#</hide>
+    <tab>RFNoC Config</tab>
+  </param>
+
+  <param>
+    <name>Enable EOB on Stop</name>
+    <key>enable_eob_on_stop</key>
+    <value>True</value>
+    <type>bool</type>
+    <hide>#if $enable_eob_on_stop() == True then 'part' else 'none'#</hide>
+    <tab>RFNoC Config</tab>
+  </param>
+
+  <param>
+    <name>FPGA Module Name</name>
+    <key>fpga_module_name</key>
+    <value>noc_block_lorabusytone</value>
+    <type>string</type>
+    <hide>all</hide>
+    <tab>RFNoC Config</tab>
+  </param>
+
+  <param>
+    <name>Force Vector Length</name>
+    <key>grvlen</key>
+    <value>1</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Device Format</name>
+    <key>otw</key>
+    <type>enum</type>
+    <option>
+      <name>Complex int16</name>
+      <key>sc16</key>
+    </option>
+    <option>
+      <name>Complex int8</name>
+      <key>sc8</key>
+    </option>
+    <option>
+      <name>Byte</name>
+      <key>u8</key>
+    </option>
+  </param>
+
+  <param>
+    <name>Num Busytones</name>
+    <key>param1</key>
+    <value>1.0</value>
+    <type>real</type>
+  </param>
+
+  <param>
+    <name>Num Preambles and Zeros</name>
+    <key>param2</key>
+    <value>10.0</value>
+    <type>real</type>
+  </param>
+
+  <param>
+    <name>BTone Trigger FIFO</name>
+    <key>param3</key>
+    <value>9.0</value>
+    <type>real</type>
+  </param>
+
+  <param>
+    <name>Dummy SID Paran</name>
+    <key>paramx</key>
+    <value>0.0</value>
+    <type>real</type>
+  </param>
+
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$grvlen</vlen>
+    <domain>rfnoc</domain>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <vlen>$grvlen</vlen>
+    <domain>rfnoc</domain>
+  </source>
+</block>

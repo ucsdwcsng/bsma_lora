@@ -1,0 +1,7 @@
+/*!
+ * \defgroup block GNU Radio WCSNG_FDR_LP C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the WCSNG_FDR_LP GNU Radio
+ *        module are listed here or in the subcategories below.
+ *
+ */
+

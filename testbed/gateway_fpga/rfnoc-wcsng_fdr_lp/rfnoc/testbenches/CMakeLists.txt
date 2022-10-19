@@ -1,0 +1,4 @@
+add_subdirectory(noc_block_lorapackdetect_tb)
+add_subdirectory(noc_block_lorabusytone_tb)
+add_subdirectory(noc_block_nullx_tb)
+add_subdirectory(noc_block_adder_tb)
