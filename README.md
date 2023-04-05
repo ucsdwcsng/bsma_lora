@@ -1,6 +1,6 @@
 # BSMA: scalable LoRa networks using full duplex gateways
 
-This repository accompanies the paper ["BSMA: scalable LoRa networks using full duplex gateways" by Raghav Subbaraman, Yeswanth Guntupalli, Shruti Jain, Rohit Kumar, Krishna Chintalapudi, and Dinesh Bharadia.](https://dl.acm.org/doi/abs/10.1145/3495243.3560544)
+This repository accompanies the paper ["BSMA: scalable LoRa networks using full duplex gateways" Raghav Subbaraman, Yeswanth Guntupalli, Shruti Jain, Rohit Kumar, Krishna Chintalapudi, and Dinesh Bharadia.](https://dl.acm.org/doi/abs/10.1145/3495243.3560544)
 
 ## Folder Structure
 
