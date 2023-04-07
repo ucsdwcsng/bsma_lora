@@ -1,6 +1,4 @@
-
-
-%%
+%% SIMULATION PARAMETERS
 clearvars;
 close all;
 
@@ -11,19 +9,21 @@ num_nodes_cell = 100; % Number of devices per cell
 hearing_ratio = 0.33*2; % Hearing range for devices
 
 % MAC Parameters (when applicable)
-backoff_vec = 0.1;
-pkt_duration = 0.1234;
+pkt_duration = 0.1234; % Packet duration in seconds (16 bytes in SF8/125 kHz)
+backoff_vec = 0.1; % Backoff duration (proportion of packet duration)
 
 % Latency Parameters
-cad_latency_vec = 0.0035;
-pkt_det_latency_vec = 0.0045;
+cad_latency_vec = 0.0035; % CAD latency in seconds
+pkt_det_latency_vec = 0.0045; % Packet detection latency in seconds
 
 % Offered load parameters
-offered_load_vec = [25 50 100 200];
+offered_load_vec = [25 50 100 200]; % Offered load as % a single cell can carry
 
-
-%%
+% Random seed
 rng_gen_idx = 1;
+
+%% SIMULATION EXECUTION
+
 rng(rng_gen_idx)
 
 tic
