@@ -18,6 +18,9 @@ pkt_duration = 0.1234;
 cad_latency_vec = 0.0035;
 pkt_det_latency_vec = 0.0045;
 
+% Offered load parameters
+offered_load_vec = [25 50 100 200];
+
 
 %%
 rng_gen_idx = 1;
@@ -29,7 +32,7 @@ for backoff_ind=1:length(backoff_vec)
         for pkt_det_ind = 1:length(pkt_det_latency_vec)
 
             % (num_cells, cell_radius_km, num_nodes_cell, offered_load_vec, inter_cell_dist_km, btone_radius_km)
-            config_params = generate_configuration_defaults(num_cells,cell_radius_km,num_nodes_cell,200,1);
+            config_params = generate_configuration_defaults(num_cells,cell_radius_km,num_nodes_cell,offered_load_vec,1);
             config_params.packet_duration = pkt_duration;
             config_params.backoff_duration = backoff_vec(backoff_ind)*pkt_duration;
             config_params.CAD_late = cad_latency_vec(cad_ind);
