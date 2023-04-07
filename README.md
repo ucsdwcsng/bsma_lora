@@ -21,7 +21,17 @@ The repository is organized as follows:
 
 The MATLAB simulator allows simulation of LoRa networks with various MAC protocols. The physical layer is abstracted out and the simulator can be used to evaluate the performance of MAC protocols in different network topologies.
 
-To get started, run `simulator/Simulations.m`
+To get started, run `simulator/Simulations.m`. The main file is called `Simulations.m which sets the deployment and network parameters for the simulation. These parameters include the number of cells, the radius of the cells, the number of devices per cell, the hearing range for the devices, the Medium Access Control (MAC) and latency parameters, and the offered load.
+
+To run the code, the user needs to set the desired parameters in `Simulations.m` and then run the script. The simulation results are stored in a directory called `results` located in the same directory as `Simulations.m`. The directory is created automatically by the code and named using a timestamp. The saved variables include `nodes, total_load, tdiag_ap, nodes_sim, tbsig_trig, and gateways_sim`.
+
+The code includes the following functions/scripts that are called from `Simulations.m:`
+
+- `generate_configuration_defaults.m`: generates the configuration settings for different offered loads
+- `generate_configuration_varying_load.m`: generates the configuration settings for a varying offered load
+- `deploy.m`: deploys the nodes and gateways in the network
+- `run_simulation_vary_load_scale.m`: runs the simulation for different offered loads
+- `plots_vary_load.m`: processes and plots the simulation results
 
 ## Cite this work
 
