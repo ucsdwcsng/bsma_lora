@@ -2,12 +2,15 @@
 
 This repository accompanies the paper ["BSMA: scalable LoRa networks using full duplex gateways" Raghav Subbaraman, Yeswanth Guntupalli, Shruti Jain, Rohit Kumar, Krishna Chintalapudi, and Dinesh Bharadia.](https://dl.acm.org/doi/abs/10.1145/3495243.3560544)
 
+["BSMA Mobicom 2022 Talk Slides"](./docs/bsma_talk_mobicom22.pdf)
+
 ## Folder Structure
 
 The repository is organized as follows:
 
 ```markdown
 .
+├── docs: Additional documentation
 ├── hardware
 |   ├── pcb_design: Full duplex analog canceller PCB design files
 ├── simulator: MATLAB simulation code
