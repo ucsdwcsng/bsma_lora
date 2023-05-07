@@ -1,6 +1,6 @@
 # BSMA: scalable LoRa networks using full duplex gateways
 
-This repository accompanies the paper ["BSMA: scalable LoRa networks using full duplex gateways" Raghav Subbaraman, Yeswanth Guntupalli, Shruti Jain, Rohit Kumar, Krishna Chintalapudi, and Dinesh Bharadia.](https://dl.acm.org/doi/abs/10.1145/3495243.3560544)
+This repository accompanies the paper: [Raghav Subbaraman, Yeswanth Guntupalli, Shruti Jain, Rohit Kumar, Krishna Chintalapudi, and Dinesh Bharadia. 2022. BSMA: scalable LoRa networks using full duplex gateways. In Proceedings of the 28th Annual International Conference on Mobile Computing And Networking (MobiCom '22). Association for Computing Machinery, New York, NY, USA, 676–689.](https://doi.org/10.1145/3495243.3560544)
 
 [Link to slides from BSMA Mobicom 2022 Talk](./docs/bsma_talk_mobicom22.pdf)
 
@@ -24,7 +24,7 @@ The repository is organized as follows:
 
 The MATLAB simulator allows simulation of LoRa networks with various MAC protocols. The physical layer is abstracted out and the simulator can be used to evaluate the performance of MAC protocols in different network topologies.
 
-To get started, run `simulator/Simulations.m`. The main file is called `Simulations.m which sets the deployment and network parameters for the simulation. These parameters include the number of cells, the radius of the cells, the number of devices per cell, the hearing range for the devices, the Medium Access Control (MAC) and latency parameters, and the offered load.
+To get started, run `simulator/Simulations.m`. The main file is called `Simulations.m` which sets the deployment and network parameters for the simulation. These parameters include the number of cells, the radius of the cells, the number of devices per cell, the hearing range for the devices, the Medium Access Control (MAC) and latency parameters, and the offered load.
 
 To run the code, the user needs to set the desired parameters in `Simulations.m` and then run the script. The simulation results are stored in a directory called `results` located in the same directory as `Simulations.m`. The directory is created automatically by the code and named using a timestamp. The user can modify the simulation parameters by editing the `SIMULATION PARAMETERS` section in the `Simulations.m` file.
 
