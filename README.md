@@ -4,6 +4,8 @@ This repository accompanies the paper: [Raghav Subbaraman, Yeswanth Guntupalli, 
 
 [Link to slides from BSMA Mobicom 2022 Talk](./docs/bsma_talk_mobicom22.pdf)
 
+[Full Paper PDF](./docs/full_paper_3495243.3560544.pdf)
+
 ## Folder Structure
 
 The repository is organized as follows:
