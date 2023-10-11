@@ -2,6 +2,8 @@
 
 This repository accompanies the paper: [Raghav Subbaraman, Yeswanth Guntupalli, Shruti Jain, Rohit Kumar, Krishna Chintalapudi, and Dinesh Bharadia. 2022. BSMA: scalable LoRa networks using full duplex gateways. In Proceedings of the 28th Annual International Conference on Mobile Computing And Networking (MobiCom '22). Association for Computing Machinery, New York, NY, USA, 676–689.](https://doi.org/10.1145/3495243.3560544)
 
+> **NOTE:**  The testbed has been moved to a separate repository: [github.com/ucsdwcsng/loratestbed](https://github.com/ucsdwcsng/loratestbed)
+
 [Link to slides from BSMA Mobicom 2022 Talk](./docs/bsma_talk_mobicom22.pdf)
 
 [Full Paper PDF](./docs/full_paper_3495243.3560544.pdf)
